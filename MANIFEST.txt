@@ -1,0 +1,26 @@
+===============================================================================
+MANIFEST OF EXCLUDED LARGE ASSETS & HEAVY BUILD ARTIFACTS
+===============================================================================
+
+Project: Japanese Vinyl Mood Stream (sdh-engine-review)
+Timestamp: 2026-08-18
+
+The following heavy directories, build outputs, and node dependencies were
+excluded from sdh-engine-review.zip to keep the archive lightweight (<20MB)
+and prevent binary leakage:
+
+1. EXCLUDED DIRECTORIES & DEPENDENCIES:
+   - node_modules/       (~378 MB) — Node.js packages & dependencies
+   - .next/              (~120 MB) — Next.js build cache & serverless bundles
+   - .wrangler/          (~15 MB)  — Cloudflare Wrangler build cache
+   - dist/ / build/      (~40 MB)  — Production web builds & SSR bundles
+   - .git/               (~10 MB)  — Git repository history
+   - .DS_Store                     — macOS system metadata files
+
+2. EXCLUDED MEDIA & BINARIES (>2MB):
+   - All album sleeve visual assets are fetched dynamically via high-res CDN
+     Apple Music & Japanese vinyl archival image URLs (1200x1200px) on-demand.
+   - All 30-second audio preview snippets are streamed on-the-fly via iTunes API.
+   - No local video/audio binary files >2MB exist in the workspace repository.
+
+===============================================================================
