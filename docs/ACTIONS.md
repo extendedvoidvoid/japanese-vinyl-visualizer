@@ -19,3 +19,13 @@
 - Evidence: Current repository is `extendedvoidvoid/Agy-Testing`; README/package metadata identify the product as Vinyl Mood Stream with sleeve visualizers and Apple previews.
 - Files changed: `docs/PLAN.md`, `docs/ACTIONS.md`.
 - Next action: Await name selection, then inventory all references before the GitHub rename.
+
+## 2026-08-30 — Approved name; rename blocked
+- Scope: Execute rename to `japanese-vinyl-visualizer`.
+- Web search: GitHub rename behavior, 2026-08-30: https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository
+- Context7: not material to naming-only work.
+- Lint: not run; no code changed.
+- Tests: not run; no code changed.
+- Evidence: User approved `japanese-vinyl-visualizer`; no rename tool is exposed and local `gh` is unavailable.
+- Files changed: `docs/PLAN.md`, `docs/ACTIONS.md`.
+- Next action: Rename under GitHub Settings, then update references and verify the redirect.
