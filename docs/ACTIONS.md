@@ -49,3 +49,13 @@
 - Evidence: Authenticated account has admin access to `extendedvoidvoid/Agy-Testing`; the exposed GitHub connector has no repository-rename operation. Repository remains unchanged.
 - Files changed: none.
 - Next action: Requires a GitHub UI/API capability that is not exposed in this session.
+
+## 2026-08-30 — Repository rename completed
+- Scope: Rename `extendedvoidvoid/Agy-Testing` to `extendedvoidvoid/japanese-vinyl-visualizer`.
+- Web search: GitHub rename procedure and redirect behavior, 2026-08-30: https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository
+- Context7: not material to repository administration.
+- Lint: not run; repository metadata only.
+- Tests: not run; repository metadata only.
+- Evidence: GitHub API returned `extendedvoidvoid/japanese-vinyl-visualizer`, preserving repository ID `1342996743` and private visibility.
+- Files changed: repository metadata only.
+- Next action: Update any remaining local remotes or external deployment references.
