@@ -9,3 +9,14 @@
 - Evidence: `AGENTS.md` now defines web-search, Context7, lint/test, and Markdown update gates.
 - Files changed: `AGENTS.md`, `docs/PLAN.md`, `docs/ACTIONS.md`.
 - Next action: Connect Context7 and run the repository lint/test commands from a local checkout.
+
+## 2026-08-30 — Repository naming proposal
+- Scope: Rename `extendedvoidvoid/Agy-Testing` to a content-accurate repository name.
+- Recommendation: `japanese-vinyl-sleeve-stream`.
+- Alternatives: `japanese-sleeve-stream`, `japanese-vinyl-visualizer`, `vinyl-sleeve-archive`.
+- Web search: GitHub repository rename behavior and naming conventions, 2026-08-30: https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository
+- Context7: not material to repository naming; no library/API implementation involved.
+- Lint: not run; naming-only proposal with no code changes.
+- Tests: not run; naming-only proposal with no code changes.
+- Acceptance criteria: lowercase kebab-case; accurately describes Japanese vinyl inner-sleeve visual streaming; avoids temporary names and vendor lock-in; update README, package metadata, deployment references, and local remotes after approval.
+- Next action: User selects a name; then perform a reference inventory before renaming.
