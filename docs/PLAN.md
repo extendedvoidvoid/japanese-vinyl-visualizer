@@ -20,3 +20,13 @@
 - Tests: not run; naming-only proposal with no code changes.
 - Acceptance criteria: lowercase kebab-case; accurately describes Japanese vinyl inner-sleeve visual streaming; avoids temporary names and vendor lock-in; update README, package metadata, deployment references, and local remotes after approval.
 - Next action: User selects a name; then perform a reference inventory before renaming.
+
+## 2026-08-30 — Approved repository name
+- Scope: Rename repository to `japanese-vinyl-visualizer`.
+- Web search: GitHub rename behavior, 2026-08-30: https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository
+- Context7: not material to naming-only work.
+- Lint: not run; no code changed.
+- Tests: not run; no code changed.
+- Acceptance criteria: Rename GitHub repository; update all repository URL references, clone instructions, deployment configuration, and local remotes; verify redirect and metadata.
+- Blocker: Connected GitHub tools expose no repository-rename operation; local `gh` CLI/authentication is unavailable.
+- Next action: Rename manually in GitHub Settings, then run the reference inventory and verification steps.
