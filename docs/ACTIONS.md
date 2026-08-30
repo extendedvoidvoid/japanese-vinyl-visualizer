@@ -9,3 +9,13 @@
 - Evidence: Root `README.md` and `AGENTS.md` were present; `PLAN.md`, `SPEC.md`, `CHANGELOG.md`, and expected `docs/` paths were not found. `package.json` defines `npm run lint` and test/build scripts.
 - Files changed: `AGENTS.md`, `docs/PLAN.md`, `docs/ACTIONS.md`.
 - Next action: Connect Context7, clone `extendedvoidvoid/Agy-Testing` locally, run lint/tests, and append the results here.
+
+## 2026-08-30 — Repository naming proposal
+- Scope: Propose a content-accurate name; no rename executed.
+- Web search: GitHub rename behavior and kebab-case naming convention, 2026-08-30: https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository
+- Context7: not material to naming-only work.
+- Lint: not run; no code changed.
+- Tests: not run; no code changed.
+- Evidence: Current repository is `extendedvoidvoid/Agy-Testing`; README/package metadata identify the product as Vinyl Mood Stream with sleeve visualizers and Apple previews.
+- Files changed: `docs/PLAN.md`, `docs/ACTIONS.md`.
+- Next action: Await name selection, then inventory all references before the GitHub rename.
