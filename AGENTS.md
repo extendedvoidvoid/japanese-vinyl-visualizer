@@ -1,7 +1,7 @@
 # AGENTS.md — Guidelines for AI Coding Assistants
 
 ## Core Project Principle
-This is the **Vinyl Mood Stream** application — an interactive web application that streams high-fidelity vinyl album visualizers with dual-layer Ken Burns animation and syncs with 30-second audio preview streams.
+This is the **Japanese Vinyl Visualizer** application — an interactive web application that streams high-fidelity Japanese-edition vinyl inner-sleeve visualizers with dual-layer Ken Burns animation and syncs with 30-second audio preview streams.
 
 ### Strict Invariants & Architectural Rules
 1. **Source of Truth Identity (`packageId`)**:
@@ -22,9 +22,19 @@ This is the **Vinyl Mood Stream** application — an interactive web application
    - Use `NEUTRAL_SLEEVE_PLACEHOLDER` (neutral dark vinyl SVG data URI).
 
 5. **Testing Requirements**:
-   - Run `node --test tests/test_catalog_integrity.mjs tests/test_runtime_invariants.mjs`.
    - Run `npm run lint`.
-   - Ensure all 9 test cases pass before committing or bundling.
+   - Run `npm test` (which includes the production build and rendered HTML tests).
+   - Run `npm run validate:artifact` when validating a deployable artifact.
+   - Record all commands and results in `docs/ACTIONS.md`.
+
+## Remote iMac Execution
+
+- GitHub is the canonical source of truth.
+- The primary runtime and verification host is the user's iMac, reached through the preconfigured tunnel.
+- When the tunnel is available, execute install, dev-server, lint, tests, and builds on the iMac.
+- A GitHub connector read or write is not evidence that a command ran on the iMac.
+- Never claim lint, tests, build, or deployment success without command output from the iMac or an equivalent runtime.
+- Before changing code from another computer, run `git pull --rebase origin main`; push only verified commits.
 
 ## Mandatory Plan-and-Action Protocol
 
@@ -42,8 +52,8 @@ Every plan, implementation action, audit, fix, deployment, or documentation upda
 
 3. **Lint-and-test gate**
    - Run `npm run lint`.
-   - Run the applicable automated tests; the baseline suite is:
-     `node --test tests/test_catalog_integrity.mjs tests/test_runtime_invariants.mjs`.
+   - Run `npm test`.
+   - Run `npm run validate:artifact` for deployable artifacts.
    - Record commands, pass/fail status, and any warnings or blocked checks.
 
 4. **Markdown update gate**
