@@ -28,7 +28,7 @@
 - Tests: not run; no code changed.
 - Evidence: User approved `japanese-vinyl-visualizer`; no rename tool is exposed and local `gh` is unavailable.
 - Files changed: `docs/PLAN.md`, `docs/ACTIONS.md`.
-- Next action: Rename under GitHub Settings, then update references and verify the redirect.
+- Next action: Rename under GitHub Settings, then perform a reference inventory before renaming.
 
 ## 2026-08-30 — Rename execution attempt
 - Scope: Rename `extendedvoidvoid/Agy-Testing` to `extendedvoidvoid/japanese-vinyl-visualizer`.
@@ -89,3 +89,13 @@
 - Evidence: Created [`docs/HANDOFF_NEMOTRON_3_5_ULTRA.md`](HANDOFF_NEMOTRON_3_5_ULTRA.md) containing scope, stop conditions, mandatory evidence gates, and deliverables.
 - Files changed: `docs/HANDOFF_NEMOTRON_3_5_ULTRA.md`, `docs/PLAN.md`, `docs/ACTIONS.md`.
 - Next action: Nemotron starts the read-only inventory; this chat is released for other work.
+
+## 2026-08-31 — Japanese sleeves branch
+- Scope: Separate Japanese Vinyl Visualizer from the Nirvana conversation.
+- Web search: not material — local repository state supplied by the user.
+- Context7: not material — handoff documentation only.
+- Lint: not run; documentation-only change.
+- Tests: not run; documentation-only change.
+- Evidence: Created [`docs/HANDOFF_JAPANESE_SLEEVES.md`](HANDOFF_JAPANESE_SLEEVES.md) with specifications, open work, constraints, and explicit separation from Nirvana.
+- Files changed: `docs/HANDOFF_JAPANESE_SLEEVES.md`, `docs/PLAN.md`, `docs/ACTIONS.md`.
+- Next action: Continue Nirvana in this conversation; resume Japanese sleeves from the handoff in a separate conversation.
