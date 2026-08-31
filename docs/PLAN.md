@@ -39,3 +39,19 @@
 - Tests: not run; documentation-only change.
 - Acceptance criteria: README and AGENTS specify GitHub as canonical source, iMac tunnel as execution host, and prohibit claiming lint/test/build success without runtime evidence.
 - Next action: Run the repository checks through the iMac tunnel and append command output to `docs/ACTIONS.md`.
+
+## 2026-08-31 — Fleet synchronization branch
+- Scope: Synchronize all projects, both computers, and GitHub around one canonical workflow.
+- Web search: GitHub Flow, pull requests, and repository synchronization, 2026-08-31: https://docs.github.com/en/get-started/using-github/github-flow
+- Context7: not material to inventory and workflow planning; library-specific queries begin per project implementation.
+- Lint: pending; run on the iMac for each project after inventory.
+- Tests: pending; run on the iMac for each project after inventory.
+- Phases:
+  1. Inventory GitHub repositories, local project directories, remotes, branches, deployment targets, and tunnel reachability.
+  2. Assign one canonical repository and name to each project; flag duplicates, abandoned repos, and untracked local work.
+  3. Standardize `README.md`, `AGENTS.md`, `docs/PLAN.md`, `docs/ACTIONS.md`, dependency manifests, and secret handling.
+  4. Configure the iMac as primary runtime; configure the MacBook as a synchronized secondary clone.
+  5. Execute lint, tests, builds, artifact validation, and deployment checks; record raw evidence.
+  6. Produce a project/computer status matrix and maintenance cadence.
+- Acceptance criteria: No project has an unknown canonical remote; no computer has an untracked authoritative copy; every active project has documented checks and current action evidence.
+- Next action: Begin Phase 1 with a read-only inventory.
