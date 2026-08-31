@@ -65,3 +65,13 @@
 - Acceptance criteria: Nemotron completes the six phases and delivers `docs/FLEET_STATUS.md`, updated `docs/PLAN.md`, `docs/ACTIONS.md`, and a final handoff report.
 - Handoff specification: [`docs/HANDOFF_NEMOTRON_3_5_ULTRA.md`](HANDOFF_NEMOTRON_3_5_ULTRA.md).
 - Next action: Nemotron begins Phase 1; this chat returns to other project work.
+
+## 2026-08-31 — Japanese sleeves branch
+- Scope: Separate the Japanese Vinyl Visualizer workstream from the Nirvana conversation.
+- Web search: not material — branch boundary and project state are local repository facts.
+- Context7: not material — handoff documentation only.
+- Lint: not run; documentation-only change.
+- Tests: not run; documentation-only change.
+- Acceptance criteria: New conversation can resume Japanese-sleeves work from one self-contained handoff without importing Nirvana assumptions.
+- Handoff specification: [`docs/HANDOFF_JAPANESE_SLEEVES.md`](HANDOFF_JAPANESE_SLEEVES.md).
+- Next action: Continue Nirvana work in this conversation; use the handoff file for the separate sleeves branch.
