@@ -55,3 +55,13 @@
   6. Produce a project/computer status matrix and maintenance cadence.
 - Acceptance criteria: No project has an unknown canonical remote; no computer has an untracked authoritative copy; every active project has documented checks and current action evidence.
 - Next action: Begin Phase 1 with a read-only inventory.
+
+## 2026-08-31 — Nemotron handoff
+- Scope: Delegate the fleet synchronization workstream to Nemotron 3.5 Ultra on the iMac tunnel.
+- Web search: GitHub Flow and repository synchronization, 2026-08-31: https://docs.github.com/en/get-started/using-github/github-flow
+- Context7: not material to inventory planning; query per project before integration work.
+- Lint: pending; Nemotron must run on the iMac.
+- Tests: pending; Nemotron must run on the iMac.
+- Acceptance criteria: Nemotron completes the six phases and delivers `docs/FLEET_STATUS.md`, updated `docs/PLAN.md`, `docs/ACTIONS.md`, and a final handoff report.
+- Handoff specification: [`docs/HANDOFF_NEMOTRON_3_5_ULTRA.md`](HANDOFF_NEMOTRON_3_5_ULTRA.md).
+- Next action: Nemotron begins Phase 1; this chat returns to other project work.
