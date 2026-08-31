@@ -24,9 +24,18 @@
 ## 2026-08-30 — Approved repository name
 - Scope: Rename repository to `japanese-vinyl-visualizer`.
 - Web search: GitHub rename behavior, 2026-08-30: https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository
-- Context7: not material to naming-only work.
+- Context7: not material to repository naming-only work.
 - Lint: not run; no code changed.
 - Tests: not run; no code changed.
 - Acceptance criteria: Rename GitHub repository; update all repository URL references, clone instructions, deployment configuration, and local remotes; verify redirect and metadata.
 - Blocker: Connected GitHub tools expose no repository-rename operation; local `gh` CLI/authentication is unavailable.
 - Next action: Rename manually in GitHub Settings, then run the reference inventory and verification steps.
+
+## 2026-08-31 — Remote iMac execution workflow
+- Scope: Document the user-provided preconfigured iMac tunnel as the primary runtime and verification path.
+- Web search: not material — local execution topology supplied by the user.
+- Context7: not material — documentation-only workflow change.
+- Lint: not run; documentation-only change.
+- Tests: not run; documentation-only change.
+- Acceptance criteria: README and AGENTS specify GitHub as canonical source, iMac tunnel as execution host, and prohibit claiming lint/test/build success without runtime evidence.
+- Next action: Run the repository checks through the iMac tunnel and append command output to `docs/ACTIONS.md`.
