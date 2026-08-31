@@ -59,3 +59,13 @@
 - Evidence: GitHub API returned `extendedvoidvoid/japanese-vinyl-visualizer`, preserving repository ID `1342996743` and private visibility.
 - Files changed: repository metadata only.
 - Next action: Update any remaining local remotes or external deployment references.
+
+## 2026-08-31 — iMac tunnel workflow documented
+- Scope: Update Markdown to treat the user-provided iMac tunnel as the primary execution and verification host.
+- Web search: not material — local execution topology supplied by the user.
+- Context7: not material — documentation-only change.
+- Lint: not run; documentation-only change.
+- Tests: not run; documentation-only change.
+- Evidence: `README.md` and `AGENTS.md` now define GitHub as canonical source, iMac tunnel as runtime host, and runtime output as required evidence for lint/tests/builds.
+- Files changed: `README.md`, `AGENTS.md`, `docs/PLAN.md`, `docs/ACTIONS.md`.
+- Next action: Execute `npm install`, `npm run lint`, `npm test`, and `npm run validate:artifact` through the iMac tunnel.
