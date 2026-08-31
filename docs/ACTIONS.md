@@ -69,3 +69,13 @@
 - Evidence: `README.md` and `AGENTS.md` now define GitHub as canonical source, iMac tunnel as runtime host, and runtime output as required evidence for lint/tests/builds.
 - Files changed: `README.md`, `AGENTS.md`, `docs/PLAN.md`, `docs/ACTIONS.md`.
 - Next action: Execute `npm install`, `npm run lint`, `npm test`, and `npm run validate:artifact` through the iMac tunnel.
+
+## 2026-08-31 — Fleet synchronization plan created
+- Scope: Create a new workstream for all projects, both computers, and GitHub.
+- Web search: GitHub Flow and pull-request synchronization, 2026-08-31: https://docs.github.com/en/get-started/using-github/github-flow
+- Context7: not material to inventory and workflow planning.
+- Lint: pending; no source audit executed.
+- Tests: pending; no source audit executed.
+- Evidence: `docs/PLAN.md` now defines six phases: inventory, canonical ownership, documentation standardization, iMac/MacBook synchronization, validation, and status matrix.
+- Files changed: `docs/PLAN.md`, `docs/ACTIONS.md`.
+- Next action: Begin Phase 1 with a read-only inventory of GitHub repositories, local directories, remotes, branches, and tunnel reachability.
