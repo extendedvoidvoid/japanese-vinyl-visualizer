@@ -1,83 +1,56 @@
-# 🎵 Japanese Vinyl Visualizer
+# Japanese Vinyl Visualizer
 
-A high-fidelity web application that streams archival Japanese-edition vinyl inner-sleeve visualizers with dual-layer Ken Burns motion, real-time BPM synchronization, and 30-second Apple/iTunes audio previews.
+An interactive web visualizer for archival **Japanese-edition vinyl inner sleeves** featuring dual-layer Ken Burns motion, real-time BPM synchronization, and 30-second client-side Apple/iTunes audio previews.
+
+Built with **Next.js 16**, **React 19**, **Vite 8**, **Cloudflare `vinext`**, **Tailwind CSS 4**, and **TypeScript 5.9**.
 
 ---
 
-## Source of Truth and Execution
+## Highlights
+- **Archival Japanese Edition Sleeves:** Curated catalog (`lib/catalog.ts`) with strict package-to-sleeve ownership invariants and zero cross-album leaks.
+- **BPM-Synced Dual-Layer Motion:** Smooth Ken Burns framing and transitions paced to each track's tempo (`app/page.tsx`, `app/globals.css`).
+- **Zero-Key, Zero-Audio-File Streaming:** Fetches 30-second previews client-side via public iTunes search endpoints — no private API keys or bundled audio required.
+- **Fail-Closed Test Suite:** 9 zero-dependency Node tests verifying catalog integrity, 20 consecutive song transitions, API fallbacks, and DOM `onError` placeholder safety.
+- **Edge-Ready:** Configured for Cloudflare Workers via `vinext` (`wrangler.jsonc`, `index.ts`).
 
-GitHub is the canonical source of truth:
+---
 
-`https://github.com/extendedvoidvoid/japanese-vinyl-visualizer`
+## Quickstart
 
-The primary execution machine is the user's iMac, reached through the already-configured tunnel. When that tunnel is available, run installation, development, lint, tests, and builds on the iMac; do not infer local execution results from GitHub file access alone. A second computer should pull from GitHub before continuing work.
-
-## 💻 Handoff to Another Computer
-
-To set up, run, and develop this project on a new machine:
-
-### 1. Requirements
-* **Node.js**: v22.13.0 or higher
-* **npm**: compatible with the installed Node.js version
-* **OS**: macOS / Linux / Windows
-
-### 2. Environment Setup
-No private API keys or secrets are required for basic streaming. Apple Music audio previews are fetched client-side via public iTunes search endpoints.
+**Requirements:** Node.js `>= 22.13.0`
 
 ```bash
-# Clone the repository
-git clone git@github.com:extendedvoidvoid/japanese-vinyl-visualizer.git
+git clone https://github.com/extendedvoidvoid/japanese-vinyl-visualizer.git
 cd japanese-vinyl-visualizer
-
-# Install dependencies
 npm install
-```
-
-### 3. Development Server
-```bash
-# Launch the development server
 npm run dev
 ```
 
-Open [http://localhost:3001](http://localhost:3001).
-
-### 4. Running Test Suite & Linter
-```bash
-npm run lint
-npm test
-```
-
-### 5. Production Build Verification
-```bash
-npm run build
-npm run validate:artifact
-```
-
-## Multi-computer workflow
-
-Before working on either computer:
-
-```bash
-git pull --rebase origin main
-```
-
-After a verified change:
-
-```bash
-git add .
-git commit -m "describe the change"
-git push origin main
-```
-
-The iMac tunnel is the execution path for runtime verification. GitHub-only edits remain source changes, not proof that lint, tests, or the deployed runtime passed.
+Open `http://localhost:3001`.
 
 ---
 
-## 📁 Key File Locations
+## Verification
 
-* **Canonical Catalog & Sleeves**: [`lib/catalog.ts`](lib/catalog.ts)
-* **Main Application Canvas & Player**: [`app/page.tsx`](app/page.tsx)
-* **Global CSS & Ken Burns Motion Styles**: [`app/globals.css`](app/globals.css)
-* **Session API Endpoint**: [`app/api/session/route.ts`](app/api/session/route.ts)
-* **Unit & Runtime Test Suite**: [`tests/`](tests/)
-* **Plan and execution records**: [`docs/PLAN.md`](docs/PLAN.md), [`docs/ACTIONS.md`](docs/ACTIONS.md)
+```bash
+# Run catalog integrity & runtime invariant tests (9/9)
+npm test
+
+# Lint & production build
+npm run lint
+npm run build
+```
+
+---
+
+## Architecture & Agent Contract
+This repository follows a deterministic `cli-contract` workflow for human and AI contributors:
+- [`HANDOFF.md`](HANDOFF.md) — Current verified state, single next step, and locked invariants.
+- [`FEATURE_MAP.md`](FEATURE_MAP.md) — File ownership map, visual/playback invariants, and anti-regression ledger.
+- [`AGENTS.md`](AGENTS.md) — Read order, hard invariants, and verification gate.
+- [`ROADMAP.md`](ROADMAP.md) — Deferred features.
+
+---
+
+## License
+MIT — see [`LICENSE`](LICENSE). Created by [César Cabrera](https://cesarplus.com/cv/en) ([César+ / AGENCE AI](https://cesarplus.com)).
